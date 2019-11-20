@@ -18,10 +18,8 @@ public class Terrain {
 		Ennemi lePetitRapide = new Ennemi(200,10,"lePetitrapide");
 
 		Ennemi creation = Ennemi.sasirUnEnnemi();
-		grosMechant.setPosY(10);
-		grosMechant.name = "toto";
 		System.out.println(creation);	
-		System.out.println(grosMechant);	
+		
 		
 	}
 
