@@ -34,7 +34,7 @@ public class Cat {
 	}
 	
 	/**
-	 * méthode qui permet d'écouter le chat
+	 * méthode qui permet d'�couter le chat
 	 */
 	public void listen() {
 		System.out.println("Miaouuuuuu");
@@ -49,7 +49,7 @@ public class Cat {
 	}
 	
 	/**
-	 * Méthode qui permet d'envoyer le chat à la chasse
+	 * M�thode qui permet d'envoyer le chat à la chasse
 	 * @return
 	 */
 	public String hunt() {
