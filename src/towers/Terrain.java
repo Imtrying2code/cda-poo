@@ -6,24 +6,29 @@
 
 package towers;
 
+import java.util.Scanner;
+
 public class Terrain {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Ennemi grosMechant = new Ennemi(100,2); 
-		Ennemi unAutreEnnemi = new Ennemi(50,4);
-		Ennemi leVraiGrosEnnemi = new Ennemi(500,1);
-		Ennemi lePetitRapide = new Ennemi(200,10);
+		Ennemi grosMechant = new Ennemi(100,2, "grosMechant"); 
+		Ennemi unAutreEnnemi = new Ennemi(50,4,"unAutreEnnemi");
+		Ennemi leVraiGrosEnnemi = new Ennemi(500,1,"leVraiGrosMechant");
+		Ennemi lePetitRapide = new Ennemi(200,10,"lePetitrapide");
 		grosMechant.seDeplace(5, 8);
 		unAutreEnnemi.seDeplace(6,2);
-		
-		grosMechant.affiche();
-		
+				
 		grosMechant.recevoirDegats(50);
 		unAutreEnnemi.recevoirDegats(10);
 		
-		grosMechant.affiche();
-		unAutreEnnemi.affiche();
+		System.out.println(grosMechant.toString());
+		System.out.println("Nombre d'ennemi(s) : "+ grosMechant.compteur);
+		System.out.println("Nombre d'ennemi(s) : "+ Ennemi.compteur);
+		Ennemi toto = Ennemi.sasirUnEnnemi();
+		System.out.println("Nouvel Ennemi :" + toto );
+		
+		
 	}
 
 }
