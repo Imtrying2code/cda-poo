@@ -9,10 +9,10 @@ import java.util.Scanner;
 
 /*Attributs*/
 public class Ennemi {
-	float posX;
-	float posY;
-	int pv;
-	int rapidite;
+	private float posX;
+	private float posY;
+	private int pv;
+	private int rapidite;
 	String name;
 	static int compteur;
 	
@@ -89,4 +89,33 @@ public class Ennemi {
 		sc.close();
 		return unEnnemi;
 	}
+	
+	// === ACCESSEUR === //
+	public int getPv() {
+		return this.pv;
+	}
+	public int getRapidite() {
+		return this.rapidite;
+	}
+	public float getPosX() {
+		return this.posX;
+	}
+	public float getPosY() {
+		return this.posY;
+	}
+	// === Mutateur === //
+	
+	public void setPv(int nouvelleValeur) {
+		this.pv = nouvelleValeur;
+	}
+	public void setRapidite(int nouvelleValeur) {
+		this.rapidite = nouvelleValeur;
+	}
+	public void setPosX(int nouvelleValeur) {
+		this.posX = nouvelleValeur;
+	}
+	public void setPosY(int nouvelleValeur) {
+		this.posY = nouvelleValeur;
+	}
 }
+

@@ -16,14 +16,12 @@ public class Terrain {
 		Ennemi unAutreEnnemi = new Ennemi(50,4,"unAutreEnnemi");
 		Ennemi leVraiGrosEnnemi = new Ennemi(500,1,"leVraiGrosMechant");
 		Ennemi lePetitRapide = new Ennemi(200,10,"lePetitrapide");
-		grosMechant.seDeplace(5, 8);
-		unAutreEnnemi.seDeplace(6,2);
-				
-		grosMechant.recevoirDegats(50);
-		unAutreEnnemi.recevoirDegats(10);
 
 		Ennemi creation = Ennemi.sasirUnEnnemi();
+		grosMechant.setPosY(10);
+		grosMechant.name = "toto";
 		System.out.println(creation);	
+		System.out.println(grosMechant);	
 		
 	}
 
