@@ -70,7 +70,9 @@ public class Ennemi {
 		return (this.pv <= 0);
 	}
 	public String toString() {
-		return " L'ennemi :" +this.name + " a :" +this.pv +"point de vie";
+		return "L'ennemi se nomme :" +this.name + "\na " +
+				this.pv +" points de vie" +"\na "+
+				this.rapidite +" points de rapidité";
 	}
 		/* Rend la méthode inapte*/
 	public static Ennemi sasirUnEnnemi() {
@@ -78,11 +80,13 @@ public class Ennemi {
 		Ennemi unEnnemi = new Ennemi(); 
 		/*Saisie au clavier par l'utilisateur.*/
 		Scanner sc = new Scanner(System.in);
+		System.out.println("Donner les points de vie :");
 		unEnnemi.pv= sc.nextInt();
+		System.out.println("Donner les points de rapidité :");
 		unEnnemi.rapidite = sc.nextInt();
+		System.out.println("Donner un nom à l'ennemi :");
 		unEnnemi.name = sc.next();
+		sc.close();
 		return unEnnemi;
-		
 	}
-	
 }

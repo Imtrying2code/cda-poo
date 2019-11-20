@@ -21,13 +21,9 @@ public class Terrain {
 				
 		grosMechant.recevoirDegats(50);
 		unAutreEnnemi.recevoirDegats(10);
-		
-		System.out.println(grosMechant.toString());
-		System.out.println("Nombre d'ennemi(s) : "+ grosMechant.compteur);
-		System.out.println("Nombre d'ennemi(s) : "+ Ennemi.compteur);
-		Ennemi toto = Ennemi.sasirUnEnnemi();
-		System.out.println("Nouvel Ennemi :" + toto );
-		
+
+		Ennemi creation = Ennemi.sasirUnEnnemi();
+		System.out.println(creation);	
 		
 	}
 
